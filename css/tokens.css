@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="light"] {
   /* Anthropic Light Theme — color tokens */
   --color-canvas: #faf9f5;
   --color-surface: #f0eee6;
@@ -17,6 +18,8 @@
   --color-on-dark-soft: #cccccc;
   --color-border: rgba(20, 20, 19, 0.12);
   --color-border-strong: rgba(20, 20, 19, 0.2);
+  --color-header-bg: rgba(250, 249, 245, 0.92);
+  --color-modal-overlay: rgba(20, 20, 19, 0.45);
 
   /* Pixel art palette */
   --pixel-sky: #a8c4e0;
@@ -31,7 +34,7 @@
 
   /* Typography */
   --font-display: Georgia, "Times New Roman", "Palatino Linotype", serif;
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   --text-display: clamp(2.5rem, 5vw + 1rem, 4.5rem);
@@ -69,4 +72,33 @@
   --duration-fast: 150ms;
   --duration-normal: 300ms;
   --duration-slow: 600ms;
+  --color-scheme: light;
+}
+
+/* Anthropic Dark Theme */
+[data-theme="dark"] {
+  --color-canvas: #141413;
+  --color-surface: #1a1a18;
+  --color-surface-alt: #222220;
+  --color-oat-warm: #2a2926;
+  --color-manilla: #2c2419;
+  --color-stone: #4a4945;
+  --color-ink: #faf9f5;
+  --color-body: #c8c6bc;
+  --color-muted: #9c9a92;
+  --color-muted-soft: #6e6d68;
+  --color-clay: #d97757;
+  --color-clay-deep: #e08a6c;
+  --color-footer: #0c0c0b;
+  --color-on-dark: #faf9f5;
+  --color-on-dark-soft: #a8a79f;
+  --color-border: rgba(250, 249, 245, 0.12);
+  --color-border-strong: rgba(250, 249, 245, 0.22);
+  --color-header-bg: rgba(20, 20, 19, 0.92);
+  --color-modal-overlay: rgba(0, 0, 0, 0.65);
+  --color-scheme: dark;
+}
+
+html {
+  color-scheme: var(--color-scheme);
 }
