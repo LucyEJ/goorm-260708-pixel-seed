@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Seed — 매일 새로운 픽셀 아트가 전하는 단 하나의 좋은 생각. AI가 그려주는 픽셀 아트와 함께 하루를 시작하세요.">
+  <meta property="og:title" content="Pixel Seed">
+  <meta property="og:description" content="하루를 시작하는 가장 작은 영감, AI가 그려주는 픽셀 아트와 함께.">
+  <meta property="og:type" content="website">
+  <title>Pixel Seed — 하루를 시작하는 가장 작은 영감</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="Pixel Seed 홈">
+        <span class="logo__dot" aria-hidden="true"></span>
+        Pixel Seed
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <ul class="site-nav__list">
+          <li><a href="#overview">개요</a></li>
+          <li><a href="#features">기능</a></li>
+          <li><a href="#compare">차별점</a></li>
+          <li><a href="#experience">경험</a></li>
+        </ul>
+        <button class="btn btn-primary site-nav__cta" type="button" data-open-modal="coming-soon">Coming Soon</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero section section--canvas" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="section-label">Daily Ritual App</span>
+          <h1 class="display-title" id="hero-title">하루를 시작하는<br>가장 작은 영감</h1>
+          <p class="hero__lead">AI가 그려주는 픽셀 아트와 하루 한 문장으로, 부담 없이 아침을 시작하세요.</p>
+          <blockquote class="hero__quote">"매일 새로운 픽셀 아트가 전하는 단 하나의 좋은 생각."</blockquote>
+          <div class="hero__actions">
+            <button class="btn btn-primary" type="button" data-open-modal="coming-soon">Coming Soon</button>
+            <span class="hero__note">iOS / Android 준비 중</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="pixel-frame pixel-frame--hero">
+            <svg class="pixel-art hero-scene" viewBox="0 0 16 16" width="256" height="256" role="img" aria-label="픽셀 아트: 씨앗, 숲, 햇빛, 새">
+              <!-- Sky -->
+              <rect x="0" y="0" width="16" height="7" fill="#a8c4e0"/>
+              <!-- Sun -->
+              <rect x="12" y="1" width="2" height="2" fill="#f0c040"/>
+              <rect x="11" y="2" width="4" height="1" fill="#f0c040"/>
+              <!-- Cloud -->
+              <rect x="2" y="2" width="3" height="1" fill="#faf9f5"/>
+              <rect x="3" y="1" width="2" height="1" fill="#faf9f5"/>
+              <!-- Hills -->
+              <rect x="0" y="7" width="16" height="2" fill="#5a8f6a"/>
+              <rect x="0" y="9" width="16" height="1" fill="#3d6b4f"/>
+              <!-- Trees -->
+              <rect x="1" y="5" width="2" height="2" fill="#2d4a3e"/>
+              <rect x="2" y="4" width="1" height="1" fill="#3d6b4f"/>
+              <rect x="12" y="5" width="2" height="2" fill="#2d4a3e"/>
+              <rect x="13" y="4" width="1" height="1" fill="#3d6b4f"/>
+              <rect x="7" y="6" width="2" height="1" fill="#2d4a3e"/>
+              <!-- Ground -->
+              <rect x="0" y="10" width="16" height="6" fill="#e3dacc"/>
+              <!-- Seed -->
+              <rect x="7" y="11" width="2" height="2" fill="#8b6914"/>
+              <rect x="8" y="10" width="1" height="1" fill="#d97757"/>
+              <!-- Bird -->
+              <rect x="5" y="3" width="1" height="1" fill="#141413"/>
+              <rect x="6" y="4" width="1" height="1" fill="#141413"/>
+              <rect x="4" y="4" width="1" height="1" fill="#141413"/>
+            </svg>
+            <p class="pixel-frame__caption">작은 씨앗도 시간을 만나면 숲이 된다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview: Problem & Solution -->
+    <section class="section section--surface" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-grid__col reveal">
+            <span class="section-label">문제</span>
+            <h2 class="section-title" id="overview-title">명언 앱, 왜 금방 잊혀질까요?</h2>
+            <p class="section-subtitle">매일 아침 수많은 정보와 알림으로 하루를 시작하지만, 하루를 바꾸는 것은 거창한 목표보다 단 하나의 좋은 생각일지도 모릅니다.</p>
+            <ul class="bullet-list">
+              <li>텍스트 중심이라 쉽게 소비되고 잊힌다</li>
+              <li>시각적 즐거움이 부족하다</li>
+              <li>반복 사용의 동기가 약하다</li>
+              <li>대부분 비슷한 디자인과 콘텐츠를 제공한다</li>
+            </ul>
+          </div>
+
+          <div class="split-grid__col reveal">
+            <span class="section-label">해결</span>
+            <h2 class="section-title">같은 문장, 매일 다른 감성</h2>
+            <p class="section-subtitle">"오늘은 어떤 그림이 나왔을까?"를 기대하며 자연스럽게 앱을 다시 방문하게 됩니다.</p>
+
+            <div class="art-rotator" aria-live="polite">
+              <div class="art-rotator__slides">
+                <figure class="art-rotator__slide is-active" data-slide="0">
+                  <svg class="pixel-art" viewBox="0 0 12 12" width="96" height="96" aria-hidden="true">
+                    <rect width="12" height="12" fill="#e3dacc"/>
+                    <rect x="5" y="3" width="2" height="2" fill="#5a8f6a"/>
+                    <rect x="4" y="5" width="4" height="1" fill="#3d6b4f"/>
+                    <rect x="5" y="6" width="2" height="4" fill="#8b6914"/>
+                    <rect x="4" y="9" width="4" height="1" fill="#d97757"/>
+                  </svg>
+                  <figcaption>🌱 작은 새싹</figcaption>
+                </figure>
+                <figure class="art-rotator__slide" data-slide="1">
+                  <svg class="pixel-art" viewBox="0 0 12 12" width="96" height="96" aria-hidden="true">
+                    <rect width="12" height="12" fill="#f5e3c7"/>
+                    <rect x="3" y="5" width="6" height="3" fill="#d97757"/>
+                    <rect x="4" y="4" width="1" height="1" fill="#141413"/>
+                    <rect x="7" y="4" width="1" height="1" fill="#141413"/>
+                    <rect x="5" y="6" width="2" height="1" fill="#141413"/>
+                    <rect x="2" y="8" width="8" height="1" fill="#c6613f"/>
+                    <rect x="1" y="9" width="1" height="1" fill="#d97757"/>
+                    <rect x="10" y="9" width="1" height="1" fill="#d97757"/>
+                  </svg>
+                  <figcaption>🦊 작은 여우</figcaption>
+                </figure>
+                <figure class="art-rotator__slide" data-slide="2">
+                  <svg class="pixel-art" viewBox="0 0 12 12" width="96" height="96" aria-hidden="true">
+                    <rect width="12" height="12" fill="#141413"/>
+                    <rect x="4" y="6" width="4" height="2" fill="#c6613f"/>
+                    <rect x="5" y="5" width="2" height="1" fill="#f0c040"/>
+                    <rect x="3" y="8" width="6" height="1" fill="#d97757"/>
+                    <rect x="2" y="9" width="8" height="1" fill="#87867f"/>
+                    <rect x="1" y="3" width="1" height="1" fill="#faf9f5"/>
+                    <rect x="10" y="2" width="1" height="1" fill="#faf9f5"/>
+                    <rect x="8" y="4" width="1" height="1" fill="#faf9f5"/>
+                  </svg>
+                  <figcaption>🏕 캠프파이어</figcaption>
+                </figure>
+              </div>
+              <div class="art-rotator__dots" role="tablist" aria-label="픽셀 아트 슬라이드">
+                <button class="art-rotator__dot is-active" type="button" role="tab" aria-selected="true" aria-label="새싹" data-slide-to="0"></button>
+                <button class="art-rotator__dot" type="button" role="tab" aria-selected="false" aria-label="여우" data-slide-to="1"></button>
+                <button class="art-rotator__dot" type="button" role="tab" aria-selected="false" aria-label="캠프파이어" data-slide-to="2"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--canvas" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">핵심 기능</span>
+          <h2 class="section-title" id="features-title">하루 10초, 작은 루틴</h2>
+          <p class="section-subtitle">매일 하나의 메시지와 하나의 픽셀 아트. 몇 초 만에 오늘의 작은 영감을 얻을 수 있습니다.</p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Daily Thought -->
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48">
+                <rect width="8" height="8" fill="#f0eee6"/>
+                <rect x="1" y="2" width="6" height="1" fill="#87867f"/>
+                <rect x="1" y="4" width="5" height="1" fill="#3d3d3a"/>
+                <rect x="1" y="6" width="4" height="1" fill="#87867f"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Daily Thought</h3>
+            <p class="feature-card__desc">하루 한 문장의 짧은 메시지. 5초 안에 읽을 수 있는 길이로, 자기계발보다 마음의 여유를 전합니다.</p>
+            <ul class="feature-card__tags">
+              <li>5초 읽기</li>
+              <li>부담 없는 Ritual</li>
+            </ul>
+          </article>
+
+          <!-- AI Pixel Art -->
+          <article class="feature-card feature-card--highlight reveal">
+            <div class="feature-card__visual" aria-hidden="true">
+              <svg class="pixel-art" viewBox="0 0 16 16" width="128" height="128">
+                <rect width="16" height="16" fill="#a8c4e0"/>
+                <rect x="0" y="10" width="16" height="6" fill="#3d6b4f"/>
+                <rect x="2" y="6" width="3" height="4" fill="#2d4a3e"/>
+                <rect x="11" y="7" width="3" height="3" fill="#2d4a3e"/>
+                <rect x="7" y="8" width="2" height="2" fill="#8b6914"/>
+                <rect x="12" y="1" width="2" height="2" fill="#f0c040"/>
+                <rect x="4" y="2" width="2" height="1" fill="#141413"/>
+                <rect x="5" y="3" width="1" height="1" fill="#141413"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">AI Pixel Art</h3>
+            <p class="feature-card__desc">Gemini API로 매일 새로운 16bit 게임 스타일 픽셀 아트를 생성합니다. 캐릭터, 소품, 풍경이 문장에 맞게 그려집니다.</p>
+            <ul class="feature-card__tags">
+              <li>매일 새 이미지</li>
+              <li>16bit 스타일</li>
+            </ul>
+          </article>
+
+          <!-- Pixel Companion -->
+          <article class="feature-card feature-card--wide reveal">
+            <h3 class="feature-card__title">Pixel Companion</h3>
+            <p class="feature-card__desc">나만의 작은 픽셀 캐릭터. 매일 앱을 방문하면 조금씩 성장합니다.</p>
+            <div class="evolution-strip" aria-label="캐릭터 성장 단계">
+              <div class="evolution-step" data-step="0">
+                <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48" aria-hidden="true">
+                  <rect width="8" height="8" fill="#f0eee6"/>
+                  <rect x="3" y="4" width="2" height="2" fill="#8b6914"/>
+                  <rect x="3" y="3" width="2" height="1" fill="#d97757"/>
+                </svg>
+                <span>Seed</span>
+              </div>
+              <span class="evolution-arrow" aria-hidden="true">→</span>
+              <div class="evolution-step" data-step="1">
+                <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48" aria-hidden="true">
+                  <rect width="8" height="8" fill="#f0eee6"/>
+                  <rect x="3" y="2" width="2" height="2" fill="#5a8f6a"/>
+                  <rect x="3" y="4" width="2" height="3" fill="#8b6914"/>
+                </svg>
+                <span>Sprout</span>
+              </div>
+              <span class="evolution-arrow" aria-hidden="true">→</span>
+              <div class="evolution-step" data-step="2">
+                <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48" aria-hidden="true">
+                  <rect width="8" height="8" fill="#f0eee6"/>
+                  <rect x="2" y="2" width="4" height="2" fill="#d97757"/>
+                  <rect x="3" y="4" width="2" height="3" fill="#3d6b4f"/>
+                </svg>
+                <span>Flower</span>
+              </div>
+              <span class="evolution-arrow" aria-hidden="true">→</span>
+              <div class="evolution-step" data-step="3">
+                <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48" aria-hidden="true">
+                  <rect width="8" height="8" fill="#f0eee6"/>
+                  <rect x="2" y="1" width="4" height="3" fill="#2d4a3e"/>
+                  <rect x="3" y="4" width="2" height="3" fill="#8b6914"/>
+                </svg>
+                <span>Tree</span>
+              </div>
+              <span class="evolution-arrow" aria-hidden="true">→</span>
+              <div class="evolution-step" data-step="4">
+                <svg class="pixel-art" viewBox="0 0 8 8" width="48" height="48" aria-hidden="true">
+                  <rect width="8" height="8" fill="#f0eee6"/>
+                  <rect x="2" y="1" width="4" height="2" fill="#2d4a3e"/>
+                  <rect x="1" y="3" width="6" height="2" fill="#5a8f6a"/>
+                  <rect x="3" y="5" width="2" height="2" fill="#a8c4e0"/>
+                  <rect x="3" y="2" width="2" height="1" fill="#f0c040"/>
+                </svg>
+                <span>Forest Spirit</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Home Widget -->
+          <article class="feature-card reveal">
+            <div class="widget-mockup" aria-hidden="true">
+              <div class="widget-mockup__phone">
+                <div class="widget-mockup__screen">
+                  <div class="widget-mockup__widget">
+                    <svg class="pixel-art" viewBox="0 0 8 8" width="40" height="40">
+                      <rect width="8" height="8" fill="#a8c4e0"/>
+                      <rect x="0" y="5" width="8" height="3" fill="#3d6b4f"/>
+                      <rect x="3" y="3" width="2" height="2" fill="#d97757"/>
+                    </svg>
+                    <p>오늘도 한 걸음</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="feature-card__title">Home Widget</h3>
+            <p class="feature-card__desc">홈 화면에서 오늘의 픽셀 아트와 한 줄 메시지를 바로 확인하세요.</p>
+          </article>
+
+          <!-- Archive -->
+          <article class="feature-card reveal">
+            <div class="archive-grid" aria-hidden="true">
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#e3dacc"/><rect x="1" y="1" width="2" height="2" fill="#3d6b4f"/></svg>
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#f5e3c7"/><rect x="1" y="2" width="2" height="1" fill="#d97757"/></svg>
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#a8c4e0"/><rect x="0" y="2" width="4" height="2" fill="#5a8f6a"/></svg>
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#141413"/><rect x="1" y="2" width="2" height="1" fill="#f0c040"/></svg>
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#f0eee6"/><rect x="1" y="1" width="2" height="2" fill="#8b6914"/></svg>
+              <svg class="pixel-art archive-tile" viewBox="0 0 4 4" width="40" height="40"><rect width="4" height="4" fill="#e8e6dc"/><rect x="0" y="3" width="4" height="1" fill="#2d4a3e"/></svg>
+            </div>
+            <h3 class="feature-card__title">Archive</h3>
+            <p class="feature-card__desc">지난 하루들을 픽셀 도감처럼 모아보세요. "내가 지나온 하루"를 하나의 컬렉션으로 소장합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiation -->
+    <section class="section section--surface-alt" id="compare" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">차별화</span>
+          <h2 class="section-title" id="compare-title">텍스트를 넘어, 매일 새로운 경험</h2>
+        </div>
+
+        <div class="compare-flow reveal">
+          <div class="compare-column compare-column--old">
+            <h3 class="compare-column__title">기존 명언 앱</h3>
+            <ul>
+              <li>텍스트 중심</li>
+              <li>같은 디자인</li>
+              <li>정적인 콘텐츠</li>
+            </ul>
+          </div>
+
+          <div class="compare-steps" aria-hidden="true">
+            <span class="compare-step">텍스트 + AI 이미지</span>
+            <span class="compare-arrow">↓</span>
+            <span class="compare-step">매일 새로운 경험</span>
+            <span class="compare-arrow">↓</span>
+            <span class="compare-step">컬렉션 가치</span>
+            <span class="compare-arrow">↓</span>
+            <span class="compare-step">캐릭터 성장</span>
+            <span class="compare-arrow">↓</span>
+            <span class="compare-step compare-step--accent">감정적 애착</span>
+          </div>
+
+          <div class="compare-column compare-column--new">
+            <h3 class="compare-column__title">Pixel Seed</h3>
+            <ul>
+              <li>AI 생성 픽셀 아트</li>
+              <li>매일 다른 비주얼</li>
+              <li>살아 움직이는 콘텐츠</li>
+              <li>캐릭터 성장 &amp; 도감</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-note reveal">
+          <span class="section-label">기술</span>
+          <p>Gemini API를 활용해 매일의 문장을 기반으로 픽셀 캐릭터, 소품, 풍경을 자동 생성합니다. 동일한 문장이라도 매번 새로운 결과가 만들어집니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="section section--canvas" id="audience" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">타겟</span>
+          <h2 class="section-title" id="audience-title">이런 분께 추천합니다</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <span class="audience-card__badge">Primary</span>
+            <h3 class="audience-card__title">아침의 여유를 원하는 분</h3>
+            <p>20~40대 직장인, 개발자, 디자이너, 창작자. 부담 없는 영감으로 하루를 시작하고 싶은 분.</p>
+          </article>
+          <article class="audience-card reveal">
+            <span class="audience-card__badge">Secondary</span>
+            <h3 class="audience-card__title">픽셀 &amp; 게임 감성</h3>
+            <p>Stardew Valley, Pokémon, Animal Crossing 같은 따뜻한 픽셀 세계를 좋아하는 분.</p>
+          </article>
+          <article class="audience-card reveal">
+            <span class="audience-card__badge">Tertiary</span>
+            <h3 class="audience-card__title">Tiny Habit 실천자</h3>
+            <p>하루 한 줄, 하루 한 장, 하루 10초 — 작은 루틴을 꾸준히 만들고 싶은 분.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Flow -->
+    <section class="section section--surface" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">사용자 경험</span>
+          <h2 class="section-title" id="experience-title">매일 아침, 5단계</h2>
+          <p class="section-subtitle">Pixel Seed는 생산성을 높이는 앱이 아닙니다. 하루를 조금 더 가볍게 시작하도록 돕는 감정 경험을 제공합니다.</p>
+        </div>
+
+        <ol class="flow-timeline reveal">
+          <li class="flow-step">
+            <span class="flow-step__num">01</span>
+            <h3 class="flow-step__title">앱 실행</h3>
+            <p>아침, 잠깐의 시간을 내어 Pixel Seed를 엽니다.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-step__num">02</span>
+            <h3 class="flow-step__title">오늘의 픽셀 아트</h3>
+            <p>AI가 새로 그린 16bit 스타일 이미지가 등장합니다.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-step__num">03</span>
+            <h3 class="flow-step__title">5초 동안 읽기</h3>
+            <p>오늘의 한 문장을 천천히, 부담 없이 읽습니다.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-step__num">04</span>
+            <h3 class="flow-step__title">캐릭터 성장</h3>
+            <p>나만의 Pixel Companion이 조금씩 자랍니다.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-step__num">05</span>
+            <h3 class="flow-step__title">하루 시작</h3>
+            <p>작은 영감과 함께 오늘을 시작합니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section section--manilla cta-section" aria-labelledby="cta-title">
+      <div class="container cta-section__inner reveal">
+        <h2 class="section-title" id="cta-title">작은 픽셀 세계를 하나씩 수집하며</h2>
+        <p class="cta-section__text">텍스트를 읽는 것이 아니라, AI가 그려주는 작은 픽셀 세계를 수집하며 자신의 하루를 기록하는 경험. 그것이 Pixel Seed의 핵심입니다.</p>
+        <button class="btn btn-primary" type="button" data-open-modal="coming-soon">Coming Soon</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo logo--footer">
+          <span class="logo__dot" aria-hidden="true"></span>
+          Pixel Seed
+        </span>
+        <p class="site-footer__tagline">매일 새로운 픽셀 아트가 전하는 단 하나의 좋은 생각.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="푸터 메뉴">
+        <a href="#overview">개요</a>
+        <a href="#features">기능</a>
+        <a href="#compare">차별점</a>
+        <a href="#experience">경험</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 Pixel Seed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Coming Soon Modal -->
+  <div class="modal-overlay" id="coming-soon-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal" role="document">
+      <h2 class="modal-title" id="modal-title">Pixel Seed는 준비 중입니다</h2>
+      <p class="modal-text">iOS와 Android 버전을 열심히 만들고 있어요. 곧 만나요 — 작은 픽셀 세계가 여러분의 아침을 기다리고 있습니다.</p>
+      <button class="btn btn-primary modal-close" type="button" data-close-modal>확인</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
